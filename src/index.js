@@ -5,6 +5,8 @@ const express = require("express");
 const http = require("http");
 const cors = require("cors")
 
+const PORT = process.env.PORT || 3000;
+
 const app = express();
 const server = http.createServer(app);
 
@@ -87,6 +89,6 @@ wss.on('connection', function connection(ws) {
     }, 30000); // Ping setiap 30 detik
 });
 
-server.listen(3004, () => {
+server.listen(PORT, () => {
     console.log('Server berjalan di port 3004');
 });
