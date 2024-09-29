@@ -90,5 +90,5 @@ wss.on('connection', function connection(ws) {
 });
 
 server.listen(PORT, () => {
-    console.log('Server berjalan di port 3004');
+    console.log(`Server berjalan di port ${PORT}`);
 });
