@@ -52,7 +52,7 @@ wss.on('connection', function connection(ws) {
         // 2. Membersihkan Data
         dataObj.kelembaban = parseInt(dataObj.kelembaban);
         dataObj.suhu = parseFloat(dataObj.suhu)
-        dataObj.jarak = parseInt(dataObj.jarak.trim());
+        dataObj.kapasitas = parseInt(dataObj.jarak.trim());
 
         // Meneruskan pesan ke semua klien kecuali pengirim
         clients.forEach((client, id) => {
