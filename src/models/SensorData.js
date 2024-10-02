@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const sensorDataSchema = new mongoose.Schema({
-    kelembaban: {
+    kapasitas: {
         type: Number,
         required: true
     },

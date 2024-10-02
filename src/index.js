@@ -32,6 +32,10 @@ app.get('/sensor-data', async (req, res) => {
     }
 });
 
+app.get('/', async (req, res) => {
+    res.status(200).json({ message: "halo" })
+})
+
 wss.on('connection', function connection(ws) {
     const clientId = Date.now();
     let saveInterval;
